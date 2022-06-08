@@ -17,7 +17,7 @@ export default function App(){
 
   });
 // eslint-disable-next-line
- await fetch('https://api.openweathermap.org/data/2.5/forecast?q=${input}&lat=${lat}&lon=${lon}&units=metric&APPID=2995fed7a7e3334d32f05f6617c43aa3')
+ await fetch('https://api.openweathermap.org/data/2.5/forecast?q=${input}&lat=${lat}&lon=${lon}&units=metric&APPID=APIKEY')
   .then(res => res.json())
   .then(result => {
     setData(result);
